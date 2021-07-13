@@ -95,7 +95,7 @@ a {
   display: flex;
   flex-direction: column;
   align-self: center;
-  max-width: 600px;
+  max-width: 200px;
   height: auto;
   object-fit: contain;
 }
