@@ -1,0 +1,138 @@
+:root {
+  --theme-main-color: #24e5a3;
+  --theme-second-color: #5ef4d6;
+  --bg-main-color: #221727;
+  --bg-second-color: #4143b1;
+  --nav-second-color-t: rgba(34, 23, 39, 0.8);
+  --theme-third-color: #f1fff6;
+  --main-font: 'Rubik', sans-serif;
+  --second-font: 'Viga', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--bg-main-color);
+  text-align: center;
+  color: var(--theme-main-color);
+  font-family: var(--second-font);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  /* margin: 2rem 2rem; */
+  background-color: var(--bg-main-color);
+}
+
+.top__section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1.3rem;
+  margin: 0.2rem 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.icon__item {
+  display: inline-flex;
+  gap: 1rem;
+}
+
+.icon__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  width: 40px;
+  height: 40px;
+  border: var(--theme-main-color) solid 2px;
+  border-radius: 50%;
+  font-size: 1.7rem;
+}
+
+.icon__name {
+  display: flex;
+  padding-top: 0.5rem;
+  font: var(--theme-third-color);
+}
+
+.links__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin-top: 0.7rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.logo__image {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 600px;
+  height: auto;
+  object-fit: contain;
+}
+
+.logo__container {
+  display: flex;
+  gap: 1rem;
+}
+.logo__name {
+  display: flex;
+  align-self: center;
+  max-width: 100px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  background-color: var(--theme-third-color);
+  border: var(--theme-third-color) solid 2px;
+  border-radius: 0.5rem;
+}
+
+.logo__script,
+.logo__copyright {
+  color: var(--theme-third-color);
+  font-size: 0.7rem;
+  font-weight: light;
+  font-family: var(--main-font);
+}
+
+/* desktop view  */
+@media screen and (min-width: 768px) {
+  .logo {
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
