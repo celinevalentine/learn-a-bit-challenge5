@@ -19,18 +19,18 @@
 
 body {
   position: relative;
-  min-height: 100vh;
+  min-height: 30vh;
   background-color: var(--bg-main-color);
   text-align: center;
   color: var(--theme-main-color);
   font-family: var(--second-font);
+  background-color: color(--bg-main-color);
 }
 
 .footer {
   display: flex;
   flex-direction: column;
   /* margin: 2rem 2rem; */
-  background-color: var(--bg-main-color);
 }
 
 .top__section {
@@ -98,6 +98,7 @@ a {
   max-width: 200px;
   height: auto;
   object-fit: contain;
+  fill: var(--theme-third-color);
 }
 
 .logo__container {
@@ -111,8 +112,8 @@ a {
   height: auto;
   object-fit: contain;
   margin-bottom: 1rem;
-  background-color: var(--theme-third-color);
-  border: var(--theme-third-color) solid 2px;
+  /* background-color: var(--theme-third-color); */
+  color: var(--theme-third-color) solid 2px;
   border-radius: 0.5rem;
 }
 
