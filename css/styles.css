@@ -106,13 +106,12 @@ a {
   gap: 1rem;
 }
 .logo__name {
-  display: flex;
-  align-self: center;
   max-width: 100px;
   height: auto;
   object-fit: contain;
-  margin-bottom: 1rem;
-  /* background-color: var(--theme-third-color); */
+  margin-bottom: 2rem;
+  padding: 0.2rem;
+  background-color: var(--theme-third-color);
   color: var(--theme-third-color) solid 2px;
   border-radius: 0.5rem;
 }
